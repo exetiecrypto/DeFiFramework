@@ -1,0 +1,26 @@
+# DeFiFramework.py
+
+class DeFiFramework:
+    def __init__(self, framework_name, features):
+        self.framework_name = framework_name
+        self.features = features
+    
+    def display_framework_info(self):
+        print(f"DeFi Framework Name: {self.framework_name}")
+        print("Features:")
+        for feature in self.features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    framework_name = "DeFiFramework"
+    features = [
+        "Smart contract templates",
+        "Decentralized exchange (DEX) integration",
+        "Lending and borrowing protocols",
+        "Yield farming strategies",
+        "Governance and voting mechanisms"
+    ]
+    
+    defi_framework = DeFiFramework(framework_name, features)
+    defi_framework.display_framework_info()
